@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: thoainganpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: thoainganpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: thoainganpipelinesjavascriptdocker 
+          image: jsacr.azurecr.io/thoainganpipelinesjavascriptdocker 
+          ports:
+          - containerPort: 8080
